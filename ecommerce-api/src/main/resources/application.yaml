@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: store
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    show-sql: true
+  jwt:
+    secret: ${JWT_SECRET}
+    accessTokenExpiration: 7200 #2h #300 # 5 min
+    refreshTokenExpiration: 604800 # 7 days
+
+
+stripe:
+  secretKey: ${STRIPE_SECRET_KEY}
+  webhookSecretKey: ${STRIPE_WEBHOOK_SECRET_KEY}
+
+pictures:
+  storage: ${PICTURES_STORAGE}
+
+websiteUrl: ${FRONT_END}
+
+
