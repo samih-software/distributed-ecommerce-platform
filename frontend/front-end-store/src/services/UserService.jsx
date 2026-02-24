@@ -7,6 +7,7 @@ export const UserService = {
         return response.json();
     },
 
+
     updateProfile: async (userId, { name, email }) => {
         const response = await apiFetch(`/users/${userId}`, {
             method: "PUT",
@@ -15,6 +16,7 @@ export const UserService = {
         });
         if (!response.ok) throw new Error("Failed to update profile");
     },
+
 
     changePassword: async (userId, oldPassword, newPassword) => {
         const response = await apiFetch(`/users/${userId}/change-password`, {

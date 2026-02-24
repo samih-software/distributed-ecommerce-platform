@@ -16,7 +16,6 @@ function Navbar() {
                     <span className="font-bold text-xl">Mareno & Marena</span>
                 </Link>
 
-
                 <div className="flex space-x-6 items-center">
                     <Link
                         to="/home"
