@@ -105,3 +105,8 @@ View past orders, track deliveries, and see detailed order information.
 ![Order History Page](https://github.com/user-attachments/assets/6eeafeb1-3d50-4959-8294-caa8affb0a0f)
 
 
+## Tests
+Code includes tests for: authentication and order flow tests
+
+![Test Code / Test Results](https://github.com/user-attachments/assets/87113b9a-15a9-4de4-aae9-c6ffe8e377df)
+
