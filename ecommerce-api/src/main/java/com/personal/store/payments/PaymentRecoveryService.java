@@ -47,17 +47,7 @@ public class PaymentRecoveryService {
         } while (!batch.isEmpty());
     }
 
-    /**
-     * Optional manual verification for a single order.
-     */
-    @Transactional
-    public void verifyOrderPayment(Long orderId) {
-        Order order = orderRepository.findById(orderId)
-                .orElseThrow(() -> new RuntimeException("Order not found"));
-
-        reconcileSingleOrder(order);
-    }
-
+    
     /**
      * Core logic to reconcile a single order.
      * Checks Stripe payment status and updates order if needed.
